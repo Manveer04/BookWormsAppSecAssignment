@@ -1,0 +1,442 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\verifyemail2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\verifyemail2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\middlewares\\sessionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\middlewares\\sessionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_BookWorms/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\verifyemail2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\verifyemail2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\middlewares\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\middlewares\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\models\\enableemail2famodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\models\\enableemail2famodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\enableemail2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\enableemail2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\enableemail2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\enableemail2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\verifygoogleauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\verifygoogleauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\enablegoogleauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\enablegoogleauthenticator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\controllers\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\controllers\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\controllers\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\controllers\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\models\\manage2famodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\models\\manage2famodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\manage2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\manage2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\enable2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\enable2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|c:\\users\\tuf_f15\\desktop\\appsec\\as assignment\\bookworms\\views\\account\\verifygoogleauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59BF8F6-44DE-423B-AE23-8C50C5290E59}|BookWorms\\BookWorms.csproj|solutionrelative:bookworms\\views\\account\\verifygoogleauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{66f449b5-c823-40bc-9016-02b4d06a1a8e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SessionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Middlewares\\SessionMiddleware.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Middlewares\\SessionMiddleware.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Middlewares\\SessionMiddleware.cs",
+              "RelativeToolTip": "BookWorms\\Middlewares\\SessionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T16:44:48.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_BookWorms/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-15T16:21:57.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "BookWorms\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAMgBAAAAAAAAAAAcwNYBAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T00:48:04.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\appsettings.json",
+              "RelativeDocumentMoniker": "BookWorms\\appsettings.json",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\appsettings.json",
+              "RelativeToolTip": "BookWorms\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T08:17:15.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VerifyEmail2FA.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml.cs",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T15:39:18.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Program.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Program.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Program.cs",
+              "RelativeToolTip": "BookWorms\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T00:38:37.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T14:33:42.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAcwH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T23:56:54.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerifyEmail2FA.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\VerifyEmail2FA.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T23:35:26.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Middlewares\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Middlewares\\NotificationHub.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Middlewares\\NotificationHub.cs",
+              "RelativeToolTip": "BookWorms\\Middlewares\\NotificationHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T14:46:23.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EnableEmail2FAModel.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\EnableEmail2FAModel.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Models\\EnableEmail2FAModel.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\EnableEmail2FAModel.cs",
+              "RelativeToolTip": "BookWorms\\Models\\EnableEmail2FAModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:36:48.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnableEmail2FA.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\EnableEmail2FA.cshtml.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\EnableEmail2FA.cshtml.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\EnableEmail2FA.cshtml.cs",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\EnableEmail2FA.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:36:05.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EnableEmail2FA.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\EnableEmail2FA.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\EnableEmail2FA.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\EnableEmail2FA.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\EnableEmail2FA.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T13:34:50.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VerifyGoogleAuthenticator.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T23:34:34.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EnableGoogleAuthenticator.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\EnableGoogleAuthenticator.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\EnableGoogleAuthenticator.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\EnableGoogleAuthenticator.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\EnableGoogleAuthenticator.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T08:36:30.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "BookWorms\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:18:49.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Controllers\\AccountService.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Controllers\\AccountService.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Controllers\\AccountService.cs",
+              "RelativeToolTip": "BookWorms\\Controllers\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T12:43:20.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Controllers\\EmailSender.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Controllers\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Controllers\\EmailSender.cs",
+              "RelativeToolTip": "BookWorms\\Controllers\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:36:04.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Manage2FAModel.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\Manage2FAModel.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Models\\Manage2FAModel.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\Manage2FAModel.cs",
+              "RelativeToolTip": "BookWorms\\Models\\Manage2FAModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T23:52:56.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Manage2FA.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\Manage2FA.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\Manage2FA.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\Manage2FA.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\Manage2FA.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T00:02:40.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BookWorms\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:19:29.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "BookWorms\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:33:22.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Enable2FA.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\Enable2FA.cshtml",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\Enable2FA.cshtml",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\Enable2FA.cshtml",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\Enable2FA.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T00:46:46.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VerifyGoogleAuthenticator.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml.cs",
+              "RelativeDocumentMoniker": "BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml.cs",
+              "ToolTip": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml.cs",
+              "RelativeToolTip": "BookWorms\\Views\\Account\\VerifyGoogleAuthenticator.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T23:37:49.448Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 124,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

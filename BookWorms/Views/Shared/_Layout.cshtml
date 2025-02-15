@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Html.Encode(ViewData["Title"]) - BookWorms</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BookWorms.styles.css" asp-append-version="true" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfWLdcqAAAAAMIEcZc01e3Y6qhi7Mg_HpOTHkeu"></script>
+</head>
+<body data-user-authenticated="@User.Identity.IsAuthenticated.ToString().ToLower()">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookWorms</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="ChangePassword">Change Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Manage2FA">Manage 2FA</a>
+                            </li>
+                            <li class="nav-item">
+                                <form asp-controller="Account" asp-action="Logout" method="post">
+                                    <button type="submit" class="btn btn-link nav-link" style="border:none; background:none; cursor:pointer;">
+                                        Logout
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - BookWorms - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.11/signalr.min.js"></script>
+    <script>
+        let idleTime = 0;
+        const idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+        function timerIncrement() {
+            idleTime++;
+            if (idleTime >= 30) { 
+                if (!sessionStorage.getItem("RedirectedByMiddleware") && isUserLoggedIn()) {
+                    console.log("🔴 Idle timeout detected, logging out...");
+                    window.location.href = '/Account/Logout?reason=timeout';
+                }
+            }
+        }
+
+        function resetIdleTime() {
+            idleTime = 0;
+        }
+
+        // Reset idle time on user interactions
+        window.onload = resetIdleTime;
+        window.onmousemove = resetIdleTime;
+        window.onkeypress = resetIdleTime;
+        window.onclick = resetIdleTime;
+        window.onscroll = resetIdleTime;
+
+        function isUserLoggedIn() {
+            return document.body.getAttribute("data-user-authenticated") === "true";
+        }
+    </script>
+
+    <script>
+        console.log("⚡ Initializing SignalR connection...");
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notificationHub", {
+                transport: signalR.HttpTransportType.WebSockets, // Force WebSocket transport
+                withCredentials: false  // Set to true if using authentication
+            })
+            .configureLogging(signalR.LogLevel.Information) // Enable logging
+            .build();
+
+        connection.on("Logout", function () {
+            if (!sessionStorage.getItem("RedirectedByMiddleware") && isUserLoggedIn()) {
+                console.log("🔴 Multiple login detected, logging out...");
+                window.location.href = '/Account/Logout?reason=multiplelogin';
+            }
+        });
+
+        connection.start()
+            .then(() => console.log("✅ SignalR connected successfully"))
+            .catch(err => console.error("❌ SignalR Connection Error:", err.toString()));
+    </script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

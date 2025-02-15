@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Enable Google Authenticator";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Scan the QR code with your Google Authenticator app:</p>
+<img src="@ViewBag.QrCodeUri" alt="QR Code" style="width: 150px; height: 150px;" />
+
+<p>Or enter this key manually: <strong>@ViewBag.Key</strong></p>
+
+<form asp-action="EnableGoogleAuthenticator" method="post">
+    <div class="form-group">
+        <label for="Code">Enter the code from the app:</label>
+        <input type="text" class="form-control" id="Code" name="Code" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>

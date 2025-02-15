@@ -1,0 +1,19 @@
+﻿@page
+@model VerifyGoogleAuthenticatorModel
+@{
+    if (ViewData != null)
+    {
+        ViewData["Title"] = "Verify Google Authenticator";
+    }
+}
+
+
+<h2>Verify Google Authenticator</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="code">Authenticator Code</label>
+        <input type="text" name="code" id="code" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>

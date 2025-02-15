@@ -1,0 +1,162 @@
+2025-02-12 02:40:45.515 +08:00 [INF] User profile is available. Using 'C:\Users\TUF_F15\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-12 02:40:45.865 +08:00 [INF] Now listening on: https://localhost:7263
+2025-02-12 02:40:45.868 +08:00 [INF] Now listening on: http://localhost:5080
+2025-02-12 02:40:45.938 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-12 02:40:45.939 +08:00 [INF] Hosting environment: Development
+2025-02-12 02:40:45.941 +08:00 [INF] Content root path: C:\Users\TUF_F15\source\repos\BookWorms\BookWorms
+2025-02-12 02:40:49.319 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2025-02-12 02:40:49.769 +08:00 [INF] Executing endpoint 'BookWorms.Controllers.HomeController.Index (BookWorms)'
+2025-02-12 02:40:49.834 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookWorms.Controllers.HomeController (BookWorms).
+2025-02-12 02:40:49.855 +08:00 [INF] Executing ViewResult, running view Index.
+2025-02-12 02:40:50.052 +08:00 [INF] Executed ViewResult - view Index executed in 206.1829ms.
+2025-02-12 02:40:50.055 +08:00 [INF] Executed action BookWorms.Controllers.HomeController.Index (BookWorms) in 218.0742ms
+2025-02-12 02:40:50.057 +08:00 [INF] Executed endpoint 'BookWorms.Controllers.HomeController.Index (BookWorms)'
+2025-02-12 02:40:50.060 +08:00 [INF] HTTP GET / responded 200 in 292.3634 ms
+2025-02-12 02:40:50.081 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-02-12 02:40:50.090 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-02-12 02:40:50.088 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/lib/jquery/dist/jquery.min.js - null null
+2025-02-12 02:40:50.085 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/BookWorms.styles.css?v=DbmKc78mZlygNk2EgNTZAv-r7GFrGkjtINxu8ypNSSI - null null
+2025-02-12 02:40:50.089 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-02-12 02:40:50.088 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 200 null text/html; charset=utf-8 779.005ms
+2025-02-12 02:40:50.144 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-02-12 02:40:50.185 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\wwwroot\css\site.css'
+2025-02-12 02:40:50.185 +08:00 [INF] Sending file. Request path: '/BookWorms.styles.css'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\obj\Debug\net8.0\scopedcss\bundle\BookWorms.styles.css'
+2025-02-12 02:40:50.194 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 104.5975ms
+2025-02-12 02:40:50.199 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/BookWorms.styles.css?v=DbmKc78mZlygNk2EgNTZAv-r7GFrGkjtINxu8ypNSSI - 200 1141 text/css 114.9257ms
+2025-02-12 02:40:50.221 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2025-02-12 02:40:50.193 +08:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\wwwroot\js\site.js'
+2025-02-12 02:40:50.150 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-12 02:40:50.157 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2025-02-12 02:40:50.229 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2025-02-12 02:40:50.260 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13797 application/javascript; charset=utf-8 111.3506ms
+2025-02-12 02:40:50.314 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 223.5605ms
+2025-02-12 02:40:50.313 +08:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\wwwroot\lib\jquery\dist\jquery.min.js'
+2025-02-12 02:40:50.245 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 163.4997ms
+2025-02-12 02:40:50.247 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 134.7739ms
+2025-02-12 02:40:50.324 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 235.8488ms
+2025-02-12 02:40:50.440 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 282.6878ms
+2025-02-12 02:40:50.466 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/favicon.ico - null null
+2025-02-12 02:40:50.495 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\TUF_F15\source\repos\BookWorms\BookWorms\wwwroot\favicon.ico'
+2025-02-12 02:40:50.499 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/favicon.ico - 200 5430 image/x-icon 32.3752ms
+2025-02-12 02:40:53.417 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/Account/Login - null null
+2025-02-12 02:40:53.433 +08:00 [INF] Executing endpoint 'AccountController.Login (BookWorms)'
+2025-02-12 02:40:53.438 +08:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AccountController (BookWorms).
+2025-02-12 02:40:53.707 +08:00 [INF] Executed action AccountController.Login (BookWorms) in 262.6317ms
+2025-02-12 02:40:53.710 +08:00 [INF] Executed endpoint 'AccountController.Login (BookWorms)'
+2025-02-12 02:40:53.712 +08:00 [ERR] HTTP GET /Account/Login responded 500 in 279.0348 ms
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method19(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-02-12 02:40:53.770 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method19(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-12 02:40:53.803 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/Account/Login - 500 null text/html; charset=utf-8 387.0435ms
+2025-02-12 02:40:53.863 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2025-02-12 02:40:53.897 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.9899ms
+2025-02-12 02:40:54.152 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-12 02:40:54.164 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13797 application/javascript; charset=utf-8 11.6368ms
+2025-02-12 02:40:58.912 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-12 02:40:58.918 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13797 application/javascript; charset=utf-8 5.607ms
+2025-02-12 02:41:00.901 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/Home/Privacy - null null
+2025-02-12 02:41:00.940 +08:00 [INF] Executing endpoint 'BookWorms.Controllers.HomeController.Privacy (BookWorms)'
+2025-02-12 02:41:00.962 +08:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller BookWorms.Controllers.HomeController (BookWorms).
+2025-02-12 02:41:00.979 +08:00 [INF] Executing ViewResult, running view Privacy.
+2025-02-12 02:41:01.006 +08:00 [INF] Executed ViewResult - view Privacy executed in 30.1557ms.
+2025-02-12 02:41:01.015 +08:00 [INF] Executed action BookWorms.Controllers.HomeController.Privacy (BookWorms) in 40.4793ms
+2025-02-12 02:41:01.021 +08:00 [INF] Executed endpoint 'BookWorms.Controllers.HomeController.Privacy (BookWorms)'
+2025-02-12 02:41:01.026 +08:00 [INF] HTTP GET /Home/Privacy responded 200 in 86.5935 ms
+2025-02-12 02:41:01.035 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/Home/Privacy - 200 null text/html; charset=utf-8 133.6399ms
+2025-02-12 02:41:01.087 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2025-02-12 02:41:01.092 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-12 02:41:01.102 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13797 application/javascript; charset=utf-8 9.6846ms
+2025-02-12 02:41:01.110 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.2447ms
+2025-02-12 02:41:02.385 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2025-02-12 02:41:02.406 +08:00 [INF] Executing endpoint 'BookWorms.Controllers.HomeController.Index (BookWorms)'
+2025-02-12 02:41:02.412 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookWorms.Controllers.HomeController (BookWorms).
+2025-02-12 02:41:02.421 +08:00 [INF] Executing ViewResult, running view Index.
+2025-02-12 02:41:02.431 +08:00 [INF] Executed ViewResult - view Index executed in 10.3382ms.
+2025-02-12 02:41:02.438 +08:00 [INF] Executed action BookWorms.Controllers.HomeController.Index (BookWorms) in 17.834ms
+2025-02-12 02:41:02.446 +08:00 [INF] Executed endpoint 'BookWorms.Controllers.HomeController.Index (BookWorms)'
+2025-02-12 02:41:02.452 +08:00 [INF] HTTP GET / responded 200 in 45.7266 ms
+2025-02-12 02:41:02.466 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 200 null text/html; charset=utf-8 82.0444ms
+2025-02-12 02:41:02.526 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2025-02-12 02:41:02.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-12 02:41:02.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13797 application/javascript; charset=utf-8 7.935ms
+2025-02-12 02:41:02.546 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8625ms
+2025-02-12 02:41:04.145 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/Account/Login - null null
+2025-02-12 02:41:04.176 +08:00 [INF] Executing endpoint 'AccountController.Login (BookWorms)'
+2025-02-12 02:41:04.182 +08:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller AccountController (BookWorms).
+2025-02-12 02:41:04.253 +08:00 [INF] Executed action AccountController.Login (BookWorms) in 56.5301ms
+2025-02-12 02:41:04.258 +08:00 [INF] Executed endpoint 'AccountController.Login (BookWorms)'
+2025-02-12 02:41:04.262 +08:00 [ERR] HTTP GET /Account/Login responded 500 in 85.9186 ms
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method19(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-02-12 02:41:04.272 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method19(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-12 02:41:04.282 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/Account/Login - 500 null text/html; charset=utf-8 139.3076ms
+2025-02-12 02:41:04.331 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2025-02-12 02:41:04.336 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-12 02:41:04.346 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13797 application/javascript; charset=utf-8 9.7653ms
+2025-02-12 02:41:04.348 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4912ms

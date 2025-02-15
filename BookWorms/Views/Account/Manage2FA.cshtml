@@ -1,0 +1,27 @@
+﻿@model Manage2FAModel
+
+<h2>Manage Two-Factor Authentication (2FA)</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}
+
+<form asp-action="Manage2FA" method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label asp-for="TwoFactorEnable">Enable 2FA</label>
+        <input asp-for="TwoFactorEnable" type="checkbox" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TwoFactorType">Preferred 2FA Method</label>
+        <select asp-for="TwoFactorType" class="form-control">
+            <option value="GoogleAuthenticator">Google Authenticator</option>
+            <option value="Email">Email</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

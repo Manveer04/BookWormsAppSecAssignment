@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Enable 2FA";
+}
+
+<h2>Enable Two-Factor Authentication</h2>
+
+<div>
+    <img src="@ViewBag.QrCodeUri" alt="QR Code" />
+    <p>Scan the QR code with Google Authenticator and enter the code below:</p>
+    <p>Secret Key: @ViewBag.Key</p>
+</div>
+
+<form method="post" asp-action="Verify2FA">
+    <div class="form-group">
+        <label for="code">Authenticator Code</label>
+        <input type="text" name="code" id="code" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>

@@ -1,0 +1,301 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookWorms.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BookWorms.ibb1t5xtsj.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\22a3c40a-0728-4b3e-97ce-1c79627c5863.jpg",
+      "PackagePath": "staticwebassets\\uploads\\22a3c40a-0728-4b3e-97ce-1c79627c5863.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\56df2fdc-c311-43a7-a2c8-37f3777b64d2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\56df2fdc-c311-43a7-a2c8-37f3777b64d2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\6324b6a7-42e2-4628-a0a5-e730224750b1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6324b6a7-42e2-4628-a0a5-e730224750b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\Before.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Before.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\Graph.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Graph.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\dc769fe7-0d63-4a4d-9a19-ceb3a1586709.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dc769fe7-0d63-4a4d-9a19-ceb3a1586709.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\e0175c1c-35b1-495b-b589-11d880ee07bc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e0175c1c-35b1-495b-b589-11d880ee07bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUF_F15\\Desktop\\AppSec\\AS Assignment\\BookWorms\\wwwroot\\uploads\\f2abe0e2-aeab-4058-bf19-8c188d074db6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f2abe0e2-aeab-4058-bf19-8c188d074db6.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BookWorms.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BookWorms.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BookWorms.props",
+      "PackagePath": "build\\BookWorms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BookWorms.props",
+      "PackagePath": "buildMultiTargeting\\BookWorms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BookWorms.props",
+      "PackagePath": "buildTransitive\\BookWorms.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

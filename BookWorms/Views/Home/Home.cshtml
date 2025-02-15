@@ -1,0 +1,28 @@
+﻿@model BookWorms.Models.UserProfileViewModel
+
+<div class="profile-container text-center">
+    <img src="@Model.PhotoPath" alt="Profile Picture" class="profile-picture" style="width: 100px !important; height: 100px !important;" />
+    <h2>Welcome, @Model.FirstName @Model.LastName!</h2>
+    <p><strong>Mobile Number:</strong> @Model.MobileNo</p>
+    <p><strong>Billing Address:</strong> @Model.BillingAddress</p>
+    <p><strong>Shipping Address:</strong> @Model.ShippingAddress</p>
+    <p><strong>Credit Card Number:</strong> @Model.CreditCardNo</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+</div>
+
+<style>
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .profile-picture {
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+</style>
+

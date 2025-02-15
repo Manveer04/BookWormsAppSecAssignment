@@ -1,0 +1,21 @@
+﻿@model VerifyEmail2FAModel
+
+<h2>Two-Factor Authentication</h2>
+<p>A verification code was sent to your email. Enter the code below:</p>
+
+<form asp-action="VerifyEmail2FA" method="post">
+    <input type="hidden" asp-for="UserId" />
+    <label>Verification Code:</label>
+    <input asp-for="Code" class="form-control" required />
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}

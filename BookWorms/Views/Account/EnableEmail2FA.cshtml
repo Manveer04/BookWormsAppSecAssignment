@@ -1,0 +1,18 @@
+﻿@page
+@model EnableEmail2FAModel
+@{
+    if (ViewData != null)
+    {
+        ViewData["Title"] = "Enable Email 2FA";
+    }
+}
+
+<h2>Enable Email 2FA</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Enable</button>
+</form>
