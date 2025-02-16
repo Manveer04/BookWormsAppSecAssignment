@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 using System;
 using System.Text;
+using OtpNet;
 using System.Security.Cryptography;
 using BookWorms.Controllers;
 using BookWorms.Services;
@@ -25,6 +26,7 @@ using static ApplicationUser;
 using QRCoder;
 using Twilio.Jwt.AccessToken;
 using Microsoft.AspNetCore.Authentication;
+using BookWorms.Views.Account;
 
 public class AccountController : Controller
 {
@@ -117,27 +119,39 @@ public class AccountController : Controller
                 return View(model);
             }
 
-            // ✅ Ensure 2FA is enforced if enabled
+            // ✅ Check if 2FA is enabled and determine the 2FA method
             if (await _userManager.GetTwoFactorEnabledAsync(user))
             {
-                _logger.LogInformation("2FA is enabled for user: {Email}. Generating and sending 2FA code.", user.Email);
+                _logger.LogInformation("2FA is enabled for user: {Email}. Checking authentication method...", user.Email);
 
-                await _userManager.ResetAuthenticatorKeyAsync(user); // Force reset key to prevent old token reuse
-                var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
-                _logger.LogInformation("✅ New 2FA token generated: {Token} for user: {Email}", token, user.Email);
+                if (user.TwoFactorType == "GoogleAuthenticator")
+                {
+                    _logger.LogInformation("🔑 Google Authenticator is enabled for user: {Email}. Redirecting to Google Authenticator verification.", user.Email);
+                    HttpContext.Session.SetString("2FAUserId", user.Id);
+                    return RedirectToAction("VerifyGoogleAuthenticator", new { returnUrl, userId = user.Id });
+                }
+                else if (user.TwoFactorType == "Email")
+                {
+                    _logger.LogInformation("📧 Email 2FA is enabled for user: {Email}. Generating and sending 2FA code.", user.Email);
 
+                    var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
+                    _logger.LogInformation("✅ 2FA token generated: {Token} for user: {Email}", token, user.Email);
 
-                await _emailSender.SendEmailAsync(user.Email, "Your 2FA Code", $"Your 2FA code is: {token}");
-                _logger.LogInformation("📧 Email sent to {Email} with 2FA code", user.Email);
+                    await _emailSender.SendEmailAsync(user.Email, "Your 2FA Code", $"Your 2FA code is: {token}");
+                    _logger.LogInformation("📨 Email sent to {Email} with 2FA code", user.Email);
 
-                // ✅ Store user ID in session before redirecting
-                HttpContext.Session.SetString("2FAUserId", user.Id);
+                    // ✅ Store user ID in session before redirecting
+                    HttpContext.Session.SetString("2FAUserId", user.Id);
 
-                return RedirectToAction("VerifyEmail2FA", new { userId = user.Id });
+                    return RedirectToAction("VerifyEmail2FA", new { userId = user.Id });
+                }
+                else
+                {
+                    _logger.LogWarning("⚠️ Unknown TwoFactorType ({Type}) for user: {Email}. Proceeding with normal login.", user.TwoFactorType, user.Email);
+                }
             }
 
-
-
+            // ✅ Proceed with normal password authentication if 2FA is not enabled
             var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, lockoutOnFailure: true);
 
             if (result.Succeeded)
@@ -177,6 +191,7 @@ public class AccountController : Controller
         _logger.LogWarning("ModelState is invalid. Errors: {Errors}", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
         return View(model);
     }
+
 
 
 
@@ -296,6 +311,7 @@ public class AccountController : Controller
         {
             return RedirectToAction("Login");
         }
+        await _userManager.ResetAuthenticatorKeyAsync(user);
 
         var isValid = await _userManager.VerifyTwoFactorTokenAsync(user, TokenOptions.DefaultAuthenticatorProvider, code);
         if (isValid)
@@ -339,57 +355,173 @@ public class AccountController : Controller
             return View(model);
         }
 
-        var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
-        if (user == null)
+        var userId = HttpContext.Session.GetString("2FAUserId");
+        if (string.IsNullOrEmpty(userId))
         {
-            throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+            _logger.LogWarning("❌ No user ID found in session for Google 2FA verification.");
+            return RedirectToAction("Login");
         }
 
-        var result = await _signInManager.TwoFactorAuthenticatorSignInAsync(model.Code, false, false);
-        if (result.Succeeded)
+        var user = await _userManager.FindByIdAsync(userId);
+        if (user == null)
         {
-            // Invalidate previous sessions
-            var userSessions = _context.UserSessions.Where(us => us.UserId == user.Id && us.IsActive).ToList();
-            foreach (var session in userSessions)
-            {
-                session.IsActive = false;
-            }
-            await _context.SaveChangesAsync();
+            _logger.LogError("❌ Unable to find user with ID {UserId} for Google 2FA verification.", userId);
+            return RedirectToAction("Login");
+        }
 
-            // Notify other sessions
-            await _hubContext.Clients.User(user.Id).SendAsync("Logout");
+        if (!await _userManager.GetTwoFactorEnabledAsync(user))
+        {
+            _logger.LogWarning("⚠️ User {Email} has not enabled Google Authenticator.", user.Email);
+            return RedirectToAction("Login");
+        }
 
-            // Create new session
-            var newSession = new UserSession
-            {
-                UserId = user.Id,
-                SessionId = HttpContext.Session.Id,
-                CreatedAt = DateTime.UtcNow,
-                IsActive = true
-            };
-            _context.UserSessions.Add(newSession);
-            await _context.SaveChangesAsync();
+        var key = await _userManager.GetAuthenticatorKeyAsync(user);
+        if (string.IsNullOrEmpty(key))
+        {
+            _logger.LogError("❌ Authenticator key not found for user: {Email}.", user.Email);
+            return RedirectToAction("Login");
+        }
 
-            return RedirectToLocal(returnUrl);
+        _logger.LogInformation("🔍 Retrieved Authenticator Key for {Email}: {Key}", user.Email, key);
+
+        // Validate TOTP
+        var totp = new Totp(Base32Encoding.ToBytes(key));
+        bool isCodeValid = totp.VerifyTotp(model.Code, out long timeStepMatched, VerificationWindow.RfcSpecifiedNetworkDelay);
+
+        _logger.LogInformation("🔢 User entered Google Authenticator code: {Code}", model.Code);
+
+        if (isCodeValid)
+        {
+            _logger.LogInformation("✅ Google Authenticator verification successful for user: {Email}", user.Email);
+
+            // Update security stamp after successful verification
+            await _userManager.UpdateSecurityStampAsync(user);
+            _logger.LogInformation("🔎 Security stamp updated for user after successful 2FA verification.");
+
+                var userSessions = await _context.UserSessions.Where(us => us.UserId == user.Id && us.IsActive).ToListAsync();
+                if (userSessions.Any())
+                {
+                    foreach (var session in userSessions)
+                    {
+                        session.IsActive = false;
+                    }
+                    await _context.SaveChangesAsync();
+                    _logger.LogInformation("✅ Deactivated previous user sessions for user: {Email}", user.Email);
+                }
+                else
+                {
+                    _logger.LogInformation("ℹ️ No active sessions found for user: {Email}", user.Email);
+                }
+                await _context.SaveChangesAsync();
+
+                await _hubContext.Clients.User(user.Id).SendAsync("Logout");
+                await _signInManager.SignInAsync(user, isPersistent: true);
+                _logger.LogInformation("🔑 User {Email} successfully signed in after 2FA.", user.Email);
+
+                var newSession = new UserSession
+                {
+                    UserId = user.Id,
+                    SessionId = HttpContext.Session.Id,
+                    CreatedAt = DateTime.UtcNow,
+                    IsActive = true
+                };
+                _context.UserSessions.Add(newSession);
+                await _context.SaveChangesAsync();
+
+                return RedirectToLocal(returnUrl);
+            //}
+            //else
+            //{
+            //    _logger.LogWarning("❌ Sign-in failed after 2FA for user: {Email}", user.Email);
+            //    TempData["ErrorMessage"] = "2FA verification failed.";
+            //    return RedirectToAction("VerifyGoogleAuthenticator", new { returnUrl });
+            //}
         }
         else
         {
-            ModelState.AddModelError(string.Empty, "Invalid authenticator code.");
+            _logger.LogWarning("❌ Invalid Google Authenticator code entered for user: {Email}", user.Email);
+            ModelState.AddModelError(string.Empty, "Invalid authenticator code. Please check your time settings or try again.");
             return View(model);
         }
     }
 
+
+
+
+
+    //[HttpGet]
+    //[Authorize]
+    //public async Task<IActionResult> EnableEmail2FA()
+    //{
+    //    var user = await _userManager.GetUserAsync(User);
+    //    if (user == null)
+    //    {
+    //        return NotFound("User not found.");
+    //    }
+
+    //    var model = new EnableEmail2FAModel
+    //    {
+    //        UserId = user.Id
+    //    };
+
+    //    return View(model);
+    //}
+
+
+    //[HttpPost]
+    //[Authorize]
+    //[ValidateAntiForgeryToken]
+    //public async Task<IActionResult> EnableEmail2FA(EnableEmail2FAModel model)
+    //{
+    //    if (!ModelState.IsValid)
+    //    {
+    //        return View(model);
+    //    }
+
+    //    var user = await _userManager.GetUserAsync(User);
+    //    if (user == null)
+    //    {
+    //        return NotFound("User not found.");
+    //    }
+
+    //    var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
+
+    //    await _emailSender.SendEmailAsync(user.Email, "Enable Email 2FA",
+    //        $"Your 2FA code is: {token}. Enter this code to enable Email 2FA.");
+
+    //    // ✅ Store the token in TempData to pass it to the next request safely
+    //    TempData["Email2FAToken"] = token;
+
+    //    // ✅ Redirect to a new page: "ConfirmEnableEmail2FA"
+    //    return RedirectToAction("ConfirmEnableEmail2FA");
+    //}
+
+
     [HttpGet]
     [Authorize]
-    public IActionResult EnableEmail2FA()
+    public IActionResult ConfirmEnableEmail2FA(string userId, string token)
     {
-        return View(new EnableEmail2FAModel());
+        if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(token))
+        {
+            _logger.LogWarning("❌ Missing userId or token in ConfirmEnableEmail2FA.");
+            return RedirectToAction("Manage2FA");
+        }
+
+        _logger.LogInformation("✅ ConfirmEnableEmail2FA page loaded for user: {UserId}", userId);
+
+        var model = new ConfirmEnableEmail2FAViewModel
+        {
+            UserId = userId,
+            Token = token
+        };
+
+        return View(model);
     }
 
     [HttpPost]
     [Authorize]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> EnableEmail2FA(EnableEmail2FAModel model)
+    public async Task<IActionResult> ConfirmEnableEmail2FA(ConfirmEnableEmail2FAViewModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -402,18 +534,29 @@ public class AccountController : Controller
             return NotFound("User not found.");
         }
 
-        var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
-        var callbackUrl = Url.Action("VerifyEmail2FA", "Account", new { userId = user.Id, token = token }, protocol: HttpContext.Request.Scheme);
+        // ✅ Use the token from the model instead of TempData
+        if (string.IsNullOrEmpty(model.Token))
+        {
+            _logger.LogWarning("❌ No token provided for verification.");
+            return RedirectToAction("ConfirmEnableEmail2FA", new { userId = model.UserId });
+        }
 
-        await _emailSender.SendEmailAsync(user.Email, "Enable Email 2FA", $"Please verify your email 2FA by clicking <a href='{callbackUrl}'>here</a>.");
+        // ✅ Verify the 2FA token
+        var isValid = await _userManager.VerifyTwoFactorTokenAsync(user, "Email", model.Code);
+        if (!isValid)
+        {
+            _logger.LogWarning("❌ Invalid 2FA code entered.");
+            ModelState.AddModelError("", "Invalid code. Please try again.");
+            return View(model);
+        }
 
-        // Store the user ID in the session
-        HttpContext.Session.SetString("2FAUserId", user.Id);
+        // ✅ Enable Email 2FA
+        await _userManager.SetTwoFactorEnabledAsync(user, true);
+        await _userManager.SetAuthenticationTokenAsync(user, "Email", "Email2FA", model.Token);
 
-        return View("VerifyEmail2FA");
+        _logger.LogInformation("✅ Email 2FA successfully enabled for user: {Email}", user.Email);
+        return RedirectToAction("Manage2FA");
     }
-
-
 
 
     [HttpGet]
@@ -533,7 +676,6 @@ public class AccountController : Controller
         var key = await _userManager.GetAuthenticatorKeyAsync(user);
         if (string.IsNullOrEmpty(key))
         {
-            await _userManager.ResetAuthenticatorKeyAsync(user);
             key = await _userManager.GetAuthenticatorKeyAsync(user);
         }
 
@@ -599,7 +741,10 @@ public class AccountController : Controller
         {
             var code = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
             await _emailSender.SendEmailAsync(user.Email, "Your 2FA Code", $"Your 2FA code is {code}");
-            return RedirectToAction("VerifyEmail2FA");
+
+            return RedirectToAction("ConfirmEnableEmail2FA", new { userId = user.Id, token = code });
+
+
         }
 
         return View(model);

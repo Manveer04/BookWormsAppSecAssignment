@@ -5,8 +5,13 @@ namespace BookWorms.Views.Account
 {
     public class EnableEmail2FAModel : PageModel
     {
-        public void OnGet()
+        [BindProperty]
+        public string UserId { get; set; }
+
+        public void OnGet(string userId)
         {
+            UserId = userId;
         }
     }
 }
+

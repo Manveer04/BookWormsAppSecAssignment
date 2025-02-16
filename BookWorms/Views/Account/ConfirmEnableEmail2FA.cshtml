@@ -1,0 +1,12 @@
+﻿@model BookWorms.Models.ConfirmEnableEmail2FAViewModel
+
+<form asp-action="ConfirmEnableEmail2FA" method="post">
+    <input type="hidden" asp-for="UserId" />
+    <input type="hidden" asp-for="Token" />
+
+    <label>Enter the 2FA code sent to your email:</label>
+    <input type="text" asp-for="Code" required />
+    <span asp-validation-for="Code" class="text-danger"></span>
+
+    <button type="submit">Verify & Enable 2FA</button>
+</form>

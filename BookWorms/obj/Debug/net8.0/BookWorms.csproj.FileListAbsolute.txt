@@ -212,3 +212,4 @@ C:\Users\TUF_F15\Desktop\AppSec\AS Assignment\BookWorms\obj\Debug\net8.0\staticw
 C:\Users\TUF_F15\Desktop\AppSec\AS Assignment\BookWorms\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\TUF_F15\Desktop\AppSec\AS Assignment\BookWorms\bin\Debug\net8.0\MailKit.dll
 C:\Users\TUF_F15\Desktop\AppSec\AS Assignment\BookWorms\bin\Debug\net8.0\MimeKit.dll
+C:\Users\TUF_F15\Desktop\AppSec\AS Assignment\BookWorms\bin\Debug\net8.0\Otp.NET.dll

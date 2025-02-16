@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/TUF_F15/Desktop/AppSec/AS Assignment/BookWorms/Views/Account/ConfirmEnableEmail2FA.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW5hYmxlRW1haWwyRkEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/TUF_F15/Desktop/AppSec/AS Assignment/BookWorms/Views/Account/Enable2FA.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFbmFibGUyRkEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
