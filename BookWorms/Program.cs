@@ -32,8 +32,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRecaptcha(options =>
 {
-    options.SiteKey = "6LeP9bMqAAAAADLhzN4GKmC8m5PxNiL4yUdezIdh";
-    options.SecretKey = "6LeP9bMqAAAAAOwTo1GWBeXw3dKVrL7O5fO4L_ce";
+    options.SiteKey = "";
+    options.SecretKey = "";
 });
 
 builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
